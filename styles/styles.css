@@ -1,0 +1,918 @@
+@import url('https://fonts.googleapis.com/css2?family=Edu+SA+Beginner:wght@400;500;600&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Roboto:ital,wght@0,300;0,400;1,500&display=swap');
+
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+.header_box{
+    display: flex;
+    background: linear-gradient(90deg, rgba(78,33,88,1) 0%, rgba(78,33,88,1) 90%, rgb(99, 51, 96) 100%);
+    min-height: auto; 
+    width: 100%;
+    height: 67px;
+    position: sticky;   /*Header Fijo */
+    top:0;               /*Header Fijo*/
+    z-index: 1;         /*Header Fijo tienen que estar las 3*/
+}
+
+/* Solo para el logo */
+.img_logo{
+    display: flex;
+    width: 7rem;
+}
+
+.img_mapa{
+    width: 100%;
+    height: auto;
+    width: fit-content;
+    margin: 0;
+}
+
+.imagen_de_fondo{
+    background: linear-gradient(rgba(113, 24, 118, 0.4),rgba(113, 24, 118, 0.4)),url(../images/img_main_fondo.jpg)  center center fixed;
+    background-size: 40%;
+}
+
+/* estilos de titulos h1---h6*/
+
+h1{
+    display: flex;
+    color: white;
+    font-family: 'Roboto', sans-serif;
+    font-size: large;
+    font-style:italic;
+    margin-left: 1rem;
+    margin-top: 0.5rem;
+}
+
+h2{
+    color: white;
+    font-family: 'Roboto', sans-serif;
+    font-size: 600;
+    text-align: center;
+    padding-top: 1.5rem;
+}
+.tituloh2{
+    padding-top: 0.5rem;
+}
+h3{
+    color: #5b1257;
+    background-color: #5b125700;
+    text-align: left;
+    font-family: 'Roboto', sans-serif;
+    font-size: 400;
+    margin-left: 20px;
+    padding-top: 1rem;
+    padding-bottom: 0.5rem;
+}
+
+h4{
+    color: #5b1257;
+    font-family: 'Roboto', sans-serif;
+    font-style:oblique;
+}
+
+h5{
+    color: white;
+    padding-left: 1rem;
+}
+
+.spanh6{
+    background: linear-gradient(rgb(216, 169, 220),rgb(62, 8, 65));
+    color: white;
+    font-family: 'Roboto', sans-serif;
+    font-size: 1rem;
+    font-weight: bold;
+    border-radius: 20px;  
+    padding: .5rem;
+    margin-left: 20rem;
+}
+
+/**/
+
+/* Estilo de Form - fieldset - Legend - */
+legend{
+    /* background-color:  rgba(113, 24, 118, 0.84);  */
+    background: linear-gradient(rgb(216, 169, 220),rgb(62, 8, 65));
+    color: white;
+    font-family: 'Roboto', sans-serif;
+    font-size: 1.5rem;
+    font-weight: bold;
+    border-radius: 20px;  
+    padding: 1rem;
+}
+/**/
+/***Contenedores ****/
+.div_contain_form{
+    background-color:  #e2e0e5ea;
+    border: 0.15rem solid black;
+    color: #5b1257;
+    width: 0 auto;
+    height: auto;
+    padding: 1rem;
+    display: flex;
+}
+
+.contain{
+    display: flex;
+    flex-wrap: wrap;
+    height: 100%;
+    margin: 0 auto;
+    padding: 1rem;
+    width: 60%; 
+    background-color:  #e2e0e5ea;
+}
+
+
+.contain_formulario{
+    background-color:  #e2e0e5ea;
+    border-radius: 2rem;
+    color: #5b1257;
+    width: 25rem;
+    height: auto;
+    margin:auto;
+    margin-top: 1rem;
+    padding-top: 1rem;
+    padding-left: 3rem;
+    font-weight: bold;
+}
+/**/
+/*Menues usados para todas las paginas*/
+
+.nav_menu ul{
+    display: flex;
+    background-color: transparent;
+    margin-top: 0.5rem; /*para despegarlo del header_box*/
+    margin-left: 0.5rem;
+}
+
+.nav_menu ul li{
+    list-style: none;
+    position: relative;
+}
+
+.nav_menu ul li a{
+    width: 100%;
+    height: 98%;
+    font-family: 'Roboto', sans-serif;
+    display: flex;
+    align-items: center;
+    padding: 14px;
+    color: white;
+    text-decoration: none;
+    font-size: 14px;
+    margin-left: 0.3rem;
+    margin-right: 1rem;
+    transition: all 1ms ease;
+    width: fit-content;
+    margin: 0;
+    padding: 1rem;
+}
+
+.nav_menu ul li a:hover{
+    height: 98%;
+    transform: scale(1.1);
+    background: rgb(78,33,88);
+    background: linear-gradient(90deg, rgba(78,33,88,1) 0%, rgba(134,54,129,1) 50%, rgba(78,33,88,1) 100%);
+    font-weight: bold;
+    align-items: center;
+}
+
+.menu_item a{
+    color: white;
+    text-decoration: none;
+}
+
+.item_elegido a{
+    color: white;
+    transform: scale(1.1);
+    background: linear-gradient(90deg, rgba(78,33,88,1) 0%, rgba(134,54,129,1) 50%, rgba(78,33,88,1) 100%);
+    text-decoration: none;
+
+}
+/**/
+
+/* Formularios Contacto y Consultas*/
+.contain_formulario .contacto{
+    color: #5b1257;
+    font-family: 'Roboto', sans-serif;
+    font-size: 600;
+    padding-top:0.5rem;
+    padding-bottom:0.5rem;
+    width: fit-content;
+    margin: 0;
+}
+.contain_formulario .contacto2{
+    padding-top:0.5rem;
+    padding-bottom:0.5rem;
+}
+/**/
+
+/*Botones */
+
+
+.botones{
+    background: linear-gradient(rgb(191, 101, 196),rgb(78, 16, 81));
+    border-radius: 2rem;
+    color:white;
+    margin-top: 0.2rem;
+    padding: 0.3rem;
+    width: 140px;
+    height: 41px;
+    border:2px solid black;
+    font-size: medium;
+    font-weight: bold;
+}
+
+.botones:hover{
+    background-color: #a958a4;
+
+}
+
+/* 
+
+/*Whatsapp*/
+.btn_wp{
+    position:fixed;
+    bottom:2rem;
+    right:1rem;
+    width: 4%;
+}
+/**/
+
+/*Boton redes*/
+.btn_red{
+    margin-left: 0.3rem;
+    padding-left: 0.1rem;
+    width: 2%;
+}
+/**/
+
+/*footer*/
+.footer_box{
+    color: whitesmoke;
+    font-size: 1rem;
+    font-weight: bold;
+    height: auto; 
+    margin: auto;
+    padding: 0.5rem;
+    padding-top: 2rem;
+    width: 100%;
+}
+
+.footer_box span{
+    margin-left: 22px;
+}
+
+.footer_box a{
+    color:whitesmoke;
+}
+
+.footer_formularios{
+    color: whitesmoke;
+    font-size: 1rem;
+    font-weight: bold;
+    height: auto; 
+    margin: auto;
+    padding: 0.5rem;
+    padding-top: 2rem;
+    width: 100%;
+    position:fixed;
+    bottom:0.5rem;
+    left:1rem;
+}
+
+.footer_formularios span{
+    margin-left: 22px;
+}
+
+.footer_formularios a{
+    color:whitesmoke;
+}
+/**/
+
+/*Iconos */
+.home_ico{
+    max-width: 28px;
+    padding-left: 0.2rem;
+}
+
+/**/
+
+/*Videos*/
+.seccion_videos{
+    margin:0 auto;
+    padding: 1rem;
+}
+/**/
+
+/*Formulario de confirmacion de pedido*/
+.formulario_venta{
+    /* background-color: gray; */
+    margin-top: 1.5rem;
+    padding-bottom: 1.5rem;
+    padding-left: 2.5rem;
+    color: white;
+}
+
+/* PROPIEDADES de las imagenes de PROMOCION*/
+.back_imagen{
+    background-repeat: no-repeat;
+    background-size: contain;
+    background-color: whitesmoke;
+    border: 2px solid black;
+    border-radius: 20px;
+    height: 230px;
+    width: 300px;
+    text-align: center;
+}
+
+.botonh5{
+    border:none;
+    color:white;
+    background-color: #5b1257;
+    
+}
+
+.botonh6 {
+    color:white;
+    border:none;
+    background-color: #5b1257;
+    border-bottom-left-radius: 0.7rem;
+    border-bottom-right-radius: 0.7rem;
+
+}
+
+.info_contenedor{
+    padding-top: 0.5rem;
+}
+
+.tarjeta{
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-color: whitesmoke;
+    border: 2px solid #5b1257;
+    border-radius: 20px;
+    text-align: center;
+    background-position: center center; 
+    
+    /*shadow*/
+    box-shadow: 8px 1px 10px rgba(0,0,0,0.2);
+    cursor: default;
+    transition: all 400ms ease;
+    height: 250px;
+    display: flex;
+    flex-direction: column;
+    justify-content: flex-end;
+    padding-bottom: 0.2rem;
+}
+
+.tarjeta:hover{
+    box-shadow: 5px 5px 20px rgba(0,0,0.4);
+    transform: translateY(-3%); /*Se traslada verticalmente 3% con el cursor*/
+
+}
+
+
+/*****GRID TINTORERIA *********/
+.grilla_tintoreria > div{
+    display: flex;      
+}
+
+.grilla_tintoreria{
+    display: grid;
+    grid-template-columns: 0.5fr 0.5fr 0.5fr;
+    grid-template-rows: 0.5fr 0.5fr;
+    grid-template-areas: 
+        "hombre     mujer  tenido"
+        "cuero     casa  alfombra";
+    gap: 1rem;  
+    padding:1rem;
+}
+
+
+.hombre{
+    grid-area: hombre;
+    background-image: url(../images/hombre_prueba.webp);
+}
+
+.mujer{
+   grid-area: mujer;
+   background-image: url(../images/mujer_prueba.webp);
+}
+
+.cuero{
+    grid-area: cuero;
+    background-image: url(../images/cuero_prueba2.webp);
+}
+
+.tenido{
+    grid-area: tenido;
+    background-image: url(../images/cat_tenido.jpg);
+}
+
+.casa{
+    grid-area: casa;
+    background-image: url(../images/valet_prueba.webp);
+}
+
+.alfombra{
+    grid-area: alfombra;
+    background-image: url(../images/alfombra_prueba.webp);
+}
+
+/*PROMO IMG ARTICULO PRECIO promo_nueva.html*/
+/* .seccion_categoria-a{
+    width: 100%;
+    display: flex;
+    justify-content: space-around;
+    flex-wrap: wrap;
+
+} */
+
+.card{
+    width: 33%;
+    justify-content: space-around;
+    background-color: white;
+    border: 2px solid #5b1257;
+    border-radius: 20px;
+    padding: 0.5rem;
+    /*shadow*/
+    box-shadow: 8px 1px 10px rgba(0,0,0,0.2);
+    cursor: default;
+    transition: all 400ms ease;
+    height: 365px;
+    display: flex;
+    flex-direction: column;
+    justify-content: flex-end;
+    padding-bottom: 0.2rem;
+}
+
+.card:hover{
+    box-shadow: 5px 5px 20px rgba(0,0,0.4);
+    transform: translateY(-3%); /*Se traslada verticalmente 3% con el cursor*/
+}
+
+/******************ESTILO B ****************/
+
+.seccion_categoria-b{
+    width: 100%;
+    display: flex;
+    justify-content: space-around;
+    flex-wrap: wrap;
+}
+
+.estilo-b{
+    font-family: 'Roboto', sans-serif;
+    width: 32%;
+    margin-bottom: 2rem;
+}
+/* Que el contenedor padre sea relativo para los hijos que son absolutos*/
+.estilo-b .img_contenedor{
+    height: 280px;
+    position: relative;
+    border-radius: 22rem;
+}
+.estilo-b a{
+    text-decoration: none;
+}
+/*Que la imagen entre en el contenedor con un minimo para que sea responsive*/
+.estilo-b .img_contenedor img{  
+    width: 100%;
+    border-radius: 1rem;
+    position: absolute;
+    min-height: 250px;
+}
+
+.estilo-b a:hover{
+    color: #f47c20;
+}
+
+/*cartel amarillo absoluto al contenedor padre*/
+.estilo-b .img_contenedor .promo{
+position: absolute;
+bottom:50%;
+left: 50%;
+font-size: 12px;
+font-style:italic ;
+background-color: yellow;
+padding: 5px;
+text-align: center;
+border-radius: 1rem;
+}
+/********************/
+/********* SWITCH  ESTILO DE BOTONES BLANCO - NEGRO******/
+
+.estilo-b .add-cart{
+    text-decoration: none;
+    color: white;
+    background: linear-gradient(rgb(191, 101, 196),rgb(78, 16, 81));
+    /* background-color: #5b1257; */
+    padding: 0.3rem;
+    border: 0.1rem #5b1257 solid;
+    border-radius: 1rem;
+}
+.estilo-b .add-cart:hover{
+    color: black;
+    border: 0.1rem #5b1257 solid;
+}
+/*Para centrar un elemento*/
+.seccion_categoria-b h4{
+    color:#5b1257;
+    width: fit-content;
+    margin:0 auto;
+}
+
+
+/**********************FIN ESTILO B******/
+
+/******************ESTILO C ****************/
+.seccion_categoria-c{
+    width: 100%;
+    display: flex;
+    justify-content: space-around;
+    flex-wrap: wrap;
+}
+
+.estilo-c{
+    font-family: 'Roboto', sans-serif;
+    width: 32%;
+}
+/* Que el contenedor padre sea relativo para los hijos que son absolutos*/
+.estilo-c .img_contenedor{
+    height: 290px;
+    position: relative;
+    border-radius: 2rem;
+}
+.estilo-c a{
+    text-decoration: none;
+}
+/*Que la imagen entre en el contenedor con un minimo para que sea responsive*/
+.estilo-c .img_contenedor img{  
+    width: 100%;
+    border-radius: 1rem;
+    position: absolute;
+    min-height: 250px;
+}
+
+/*cartel amarillo absoluto al contenedor padre*/
+.estilo-c .img_contenedor .promo{
+position: absolute;
+bottom:50%;
+left: 50%;
+font-size: 12px;
+font-style:italic ;
+background-color: yellow;
+padding: 5px;
+text-align: center;
+border-radius: 1rem;
+}
+/********************/
+/********* SWITCH  ESTILO DE BOTONES BLANCO - NEGRO******/
+
+.estilo-c .add-cart{
+    text-decoration: none;
+    color: white;
+    background: linear-gradient(rgb(191, 101, 196),rgb(78, 16, 81));
+    padding: 0.3rem;
+    border: 0.1rem #5b1257 solid;
+    border-radius: 1rem;
+}
+.estilo-c .add-cart:hover{
+    color: black;
+    border: 0.1rem #5b1257 solid;
+}
+/*Para centrar un elemento*/
+.seccion_categoria-c h4{
+    color:#5b1257;
+    width: fit-content;
+    margin:0 auto;
+}
+/************************** ANIMACION LOGO */
+.slide-in-elliptic-top-fwd {
+	-webkit-animation: slide-in-elliptic-top-fwd 0.7s cubic-bezier(0.250, 0.460, 0.450, 0.940) both;
+	        animation: slide-in-elliptic-top-fwd 0.7s cubic-bezier(0.250, 0.460, 0.450, 0.940) both;
+}
+/* ----------------------------------------------
+ * Generated by Animista on 2022-8-12 13:12:45
+ * Licensed under FreeBSD License.
+ * See http://animista.net/license for more info. 
+ * w: http://animista.net, t: @cssanimista
+ * ---------------------------------------------- */
+
+/**
+ * ----------------------------------------
+ * animation slide-in-elliptic-top-fwd
+ * ----------------------------------------
+ */
+ @-webkit-keyframes slide-in-elliptic-top-fwd {
+    0% {
+      -webkit-transform: translateY(-600px) rotateX(-30deg) scale(0);
+              transform: translateY(-600px) rotateX(-30deg) scale(0);
+      -webkit-transform-origin: 50% 100%;
+              transform-origin: 50% 100%;
+      opacity: 0;
+    }
+    100% {
+      -webkit-transform: translateY(0) rotateX(0) scale(1);
+              transform: translateY(0) rotateX(0) scale(1);
+      -webkit-transform-origin: 50% 1400px;
+              transform-origin: 50% 1400px;
+      opacity: 1;
+    }
+  }
+  @keyframes slide-in-elliptic-top-fwd {
+    0% {
+      -webkit-transform: translateY(-600px) rotateX(-30deg) scale(0);
+              transform: translateY(-600px) rotateX(-30deg) scale(0);
+      -webkit-transform-origin: 50% 100%;
+              transform-origin: 50% 100%;
+      opacity: 0;
+    }
+    100% {
+      -webkit-transform: translateY(0) rotateX(0) scale(1);
+              transform: translateY(0) rotateX(0) scale(1);
+      -webkit-transform-origin: 50% 1400px;
+              transform-origin: 50% 1400px;
+      opacity: 1;
+    }
+  }
+  
+
+/*********  MEDIA QUERY  DESKTOP ******/
+@media screen and (max-width: 1024px) {
+.header_box{        
+    width: 100%;
+    height: auto;
+    background: linear-gradient(90deg, rgba(78,33,88,1) 0%, rgba(78,33,88,1) 90%, rgb(99, 51, 96) 100%);
+
+}
+.nav_menu ul{
+    width: 100%;
+    height: auto;
+    background-color: transparent;
+    flex-wrap: wrap;
+    margin-left: 0px;
+}    
+
+.nav_menu ul li a{
+    font-size: small;
+    width: fit-content;
+    padding: 0.3rem;
+    margin: 0;
+    height: 3rem;
+} 
+
+.nav_menu ul li a:hover{
+    background: rgb(72,26,82);
+    background: linear-gradient(90deg, rgba(72,26,82,1) 0%, rgba(134,54,129,1) 100%);
+
+}
+.tituloh2 {
+    margin-top: 0;
+}
+  
+.card{
+    width: 45%;
+}
+
+legend{
+    padding: 0.5rem;
+}
+.contain_formulario{
+    margin-top: 2.5rem;
+    height: 50%;
+}
+.contain_formulario .contacto{
+    width: 40%;
+    height: 50%;
+    margin-top: 1.5rem;
+    width: fit-content;
+    margin: 0;
+}
+.img_mapa{
+    width: 15rem;
+    padding-top: 0.5rem;
+    padding-bottom: 0.5rem;
+} 
+.btn_wp{
+    width: 5%;
+}
+
+}
+/*********  MEDIA QUERY  DESKTOP ******/
+@media screen and (max-width: 900px) {
+
+    .nav_menu ul{
+        margin-left: 0px;
+    }    
+    
+    .nav_menu ul li a{
+        font-size: 14px;
+        padding: 0.7rem;
+    } 
+    h1{
+        width: 25px;
+        margin: 0;
+        padding-left: 0;
+        font-size: small;
+    }
+    h5{
+        width: 48px;
+        padding-left: 0;
+        font-size: small;
+    }
+
+    .home_ico{
+        max-width: 18px;
+        padding-left: 0.1rem;
+    }
+}
+
+/*********  MEDIA QUERY  DESKTOP ******/
+@media screen and (max-width: 770px) {
+   
+
+    .nav_menu ul li a{
+        font-size: 12px;
+        padding: 0.2rem;
+    } 
+}
+
+/*********  MEDIA QUERY  DESKTOP ******/
+@media screen and (max-width: 780px) {
+   
+
+    .nav_menu ul li a{
+        font-size: 12px;
+        padding: 0.2rem;
+    } 
+
+}
+/*********  MEDIA QUERY  DESKTOP ******/
+@media screen and (max-width: 610px) {
+   
+    .nav_menu ul li a{
+        font-size: 9px;
+        padding: 0.2rem;
+    } 
+    .seccion.contain{
+        height: 280px;
+        width: 280px;
+        margin:0;
+        padding: 0;
+    }  
+    .seccion.contain{
+        height: 280px;
+        width: 280px;
+        margin:0;
+        padding: 0;
+    }  
+    
+    
+        /*Videos*/
+    .seccion_videos{
+        width: 100%;
+        margin:0 auto;
+    }
+    
+}
+/*********  MEDIA QUERY  DESKTOP ******/
+@media screen and (max-width: 520px) {
+   
+    .nav_menu ul li a{
+        font-size: 7px;
+        padding: 0.2rem;
+    } 
+
+
+}
+
+/*********MEDIA QUERY - Mobile *******/
+@media screen and (min-width: 320px) and (max-width: 480px) {
+    .header_box{
+        width: 100%;
+        height: 100%;
+        flex-direction: column;
+        background: #4e2158;
+    }
+    .nav_menu ul{
+        margin-left: 0px;
+        height: 1.6rem;
+    }
+    .nav_menu ul li a{
+        height: 1.5rem;
+        font-size: 9px;
+        width: fit-content;
+        padding: 0.5rem;
+        margin: 0;
+    }
+
+    .nav_menu ul li a:hover{
+        background: linear-gradient(90deg, rgba(78,33,88,1) 0%, rgba(134,54,129,1)  50%, rgba(78,33,88,1) 100%);
+
+        height: 1.5rem;
+    } 
+    .nav_menu ul li{
+        margin-left: 0;
+        padding: 0;
+    }
+    .contain{
+        height: 80%;
+        width: 80%; 
+    } 
+
+/********CENTRAR EL CONTAIN*******/  
+    .seccion.contain{
+        height: 250px;
+        width: 250px;
+        margin:0;
+        padding: 0;
+    }  
+
+
+        /*Videos*/
+    .seccion_videos{
+        width: 100%;
+        margin:0 auto;
+    }
+
+    .div_contain_form .div_principal{
+        color: black;
+        font-size: xx-small;
+    }  
+
+    .grilla_tintoreria {
+        display: flex;
+        flex-direction: column;
+        height: auto;
+    }
+
+    .card{
+        width: 100%;
+        height: auto;
+        padding-bottom: 0.2rem;
+    }
+
+    .seccion_categoria-b{
+        display: flex;
+        flex-direction: column;
+        width: 90%;
+        height: auto;
+        justify-content: center;
+        padding-left: 3rem;
+    }
+
+    .estilo-b .add-cart{
+        width: fit-content;
+        margin: 0;
+        font-size: small;
+    }
+
+    .seccion_categoria-c{
+        display: flex;
+        flex-direction: column;
+        width: 90%;
+        height: auto;
+        padding-left: 3rem;
+    }
+    .estilo-c .add-cart{
+        width: fit-content;
+        margin: 0;
+        margin-top: 1rem;
+        font-size: small;
+    }
+    .contacto{
+        padding: 0.1rem;
+    }
+    .contain_formulario{
+        width: 85%;
+        height: auto;
+        margin-top: 0.2rem;
+        padding-left: 2rem;
+    }
+
+    .contain_formulario .contacto{
+        padding-top: 0.2rem;
+        padding-bottom: 0.2rem;
+    }
+
+    .contain_formulario .contacto2{
+        padding-top: 0.2rem;
+        padding-bottom: 0.2rem;
+    }
+    .img_mapa{
+        width: 15rem;
+        padding-top: 0;
+        padding-bottom: 0;
+    }
+
+    .btn_wp{
+            width: 8%;
+    }
+
+
+}
