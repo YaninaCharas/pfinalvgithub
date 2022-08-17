@@ -124,6 +124,8 @@ legend{
     padding: 1rem;
     width: 60%; 
     background-color:  #e2e0e5ea;
+    border-radius: 20px;
+    border: 0.2rem solid green;
 }
 
 
@@ -424,15 +426,6 @@ legend{
     background-image: url(../images/alfombra_prueba.webp);
 }
 
-/*PROMO IMG ARTICULO PRECIO promo_nueva.html*/
-/* .seccion_categoria-a{
-    width: 100%;
-    display: flex;
-    justify-content: space-around;
-    flex-wrap: wrap;
-
-} */
-
 .card{
     width: 33%;
     justify-content: space-around;
@@ -683,6 +676,8 @@ legend{
     padding: 0.5rem;
 }
 .contain_formulario{
+    background: rgb(241,236,241);
+background: linear-gradient(90deg, rgba(241,236,241,1) 0%, rgba(245,242,245,1) 50%, rgba(25,24,25,1) 100%);
     margin-top: 2.5rem;
     height: 50%;
 }
