@@ -124,7 +124,7 @@ legend{
     display: flex;
     flex-wrap: wrap;
     height: 100%;
-    margin: 0 auto;
+    margin: 0rem auto;
     padding: 1rem;
     width: 60%; 
     background-color: transparent;
@@ -132,18 +132,32 @@ legend{
     justify-content: space-around;
 }
 
+.contain p{
+    text-align: center;
+}
 
 .contain_formulario{
     background-color:  #e2e0e5ea;
     border-radius: 2rem;
     color: #5b1257;
-    width: 25rem;
+    width: 21rem;
     height: auto;
     margin:auto;
     margin-top: 1rem;
     padding-top: 1rem;
-    padding-left: 3rem;
     font-weight: bold;
+    text-align: center;
+}
+
+.contain_formulario >div{
+    text-align: left;
+    text-indent: 1.5rem;
+}
+
+textarea{
+    margin-left: 1.5rem;
+    text-align: left;
+    text-indent: 1.5rem;
 }
 /**/
 /*Menues usados para todas las paginas*/
@@ -210,11 +224,9 @@ legend{
     padding-bottom:0.5rem;
     width: fit-content;
     margin: 0;
+    
 }
-.contain_formulario .contacto2{
-    padding-top:0.5rem;
-    padding-bottom:0.5rem;
-}
+
 /**/
 
 /*Botones */
@@ -401,7 +413,8 @@ legend{
 }
 .ico{
     border: 0.1px solid transparent;
-    color: green;
+    color: rgb(3, 48, 3);
+    font-weight: bold;
     font-size: 10px;
 }
 .ropa{
@@ -414,6 +427,11 @@ legend{
 
 .eco{
     grid-area: eco;
+}
+
+.centrar{
+    font-size: 15px;
+    padding-left: 2rem;
 }
 /*****GRID TINTORERIA *********/
 .grilla_tintoreria > div{
@@ -684,7 +702,7 @@ border-radius: 1rem;
     width: auto;
 }
 .btn_ico{
-    width: 50%;
+    width: 60%;
     padding-left: 2rem;
 }
 .nav_menu ul{
@@ -725,6 +743,11 @@ background: linear-gradient(90deg, rgba(241,236,241,1) 0%, rgba(245,242,245,1) 5
     margin-top: 2.5rem;
     height: 50%;
 }
+
+.contain_formulario legend{
+    text-align: center;
+}
+
 .contain_formulario .contacto{
     width: 40%;
     height: 50%;
@@ -784,8 +807,7 @@ background: linear-gradient(90deg, rgba(241,236,241,1) 0%, rgba(245,242,245,1) 5
         width: auto;
     }
     .btn_ico{
-        width: 70%;
-        padding-left: 2rem;
+        width: 80%;
     }
     .nav_menu ul li a{
         font-size: 12px;
@@ -806,12 +828,9 @@ background: linear-gradient(90deg, rgba(241,236,241,1) 0%, rgba(245,242,245,1) 5
 
 /*********  MEDIA QUERY  DESKTOP ******/
 @media screen and (max-width: 610px) {
-    .grilla_index {
-        width: auto;
-    }   
+ 
     .btn_ico{
         width: 80%;
-        padding-left: 2rem;
     }
 
     .nav_menu ul li a{
@@ -837,21 +856,20 @@ background: linear-gradient(90deg, rgba(241,236,241,1) 0%, rgba(245,242,245,1) 5
         width: 100%;
         margin:0 auto;
     }
-    
+  
 }
 /*********  MEDIA QUERY  DESKTOP ******/
 @media screen and (max-width: 520px) {
-   
+  
     .nav_menu ul li a{
         font-size: 7px;
         padding: 0.2rem;
     } 
+
     .btn_ico{
         width: 90%;
         padding-left: 2rem;
     }
-
-
 }
 
 /*********MEDIA QUERY - Mobile *******/
@@ -975,10 +993,6 @@ background: linear-gradient(90deg, rgba(241,236,241,1) 0%, rgba(245,242,245,1) 5
         padding-bottom: 0.2rem;
     }
 
-    .contain_formulario .contacto2{
-        padding-top: 0.2rem;
-        padding-bottom: 0.2rem;
-    }
     .img_mapa{
         width: 15rem;
         padding-top: 0;
@@ -992,5 +1006,8 @@ background: linear-gradient(90deg, rgba(241,236,241,1) 0%, rgba(245,242,245,1) 5
         width: 35%;
         padding-left: 2rem;
     }
-
+    .ico{
+        /* color: rgb(26, 58, 26); */
+        color:rgb(162, 159, 159);
+    }
 }

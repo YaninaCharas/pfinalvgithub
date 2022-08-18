@@ -34,31 +34,33 @@
             <fieldset class="contain_formulario">
                 <legend> Dejanos tu Consulta...</legend>
                 <div>
-                    <div class="contacto">Sos Cliente 
+                    <section class="contacto">Sos Cliente 
                         <select name="Cliente">
                             <option value="S">SI</option>
                             <option value="N">NO</option>
                         </select>
-                    </div>
-                    <span class="contacto"> Sexo :</span>
-                    <label> Hombre</label> 
-                    <input type="radio" name="sexo" 
-                    value="Hombre" required/>
-                    <label> Mujer </label>
-                    <input type="radio" name="sexo" value="Mujer" required/>                 
+                    </section>
+                    <section>
+                        <label class="contacto"> Sexo :</label>
+                        <label> Hombre</label> 
+                        <input type="radio" name="sexo" 
+                        value="Hombre" required/>
+                        <label> Mujer </label>
+                        <input type="radio" name="sexo" value="Mujer" required/>    
+                    </section>             
                     <div class="contacto2">
                         <label class="contacto" for="iname">Nombre</label>
                         <input id="iname" type="text" name="nombre" required />
                     </div>
-                    <div class="contacto2">
+                    <div class="contacto">
                         <label class="contacto" for="iapellido">Apellido</label>
                         <input id="iapellido" type="text" name="apellido" required/>   
                     </div>
-                    <div class="contacto2">
+                    <div class="contacto">
                         <label class="contacto" class="input" for="iemail">Email</label>
                         <input id="iemail" type="email" name="email" required/>   
                     </div>
-                    <div class="contacto2">
+                    <div class="contacto">
                         <label class="contacto" for="comentario">Consulta</label> 
                     </div>
                     <textarea id="comentario" name="comentario" rows="8" cols="35" placeholder="Deje su consulta..." required></textarea>
@@ -70,7 +72,7 @@
             </fieldset>
         </form>
     </main>
-    <footer class="footer_box">
+    <footer class="footer_formularios">
         <span>Copywrite 2022 - </span>
         <a href="mailto:ycharas@gmail.com">Contactame aqui</a>
         <a href="https://www.facebook.com" target="_blank"><img class="btn_red" src="../images/iconos/fb.png" alt="fb"></a>
