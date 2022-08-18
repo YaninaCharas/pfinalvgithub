@@ -299,20 +299,33 @@ textarea{
 
 .footer_box a{
     color:whitesmoke;
-}
 
+}
 .footer_formularios{
     color: whitesmoke;
-    font-size: 1rem;
+    font-size: 0.7rem;
     font-weight: bold;
     height: auto; 
     margin: auto;
     padding: 0.5rem;
-    padding-top: 2rem;
+    padding-top: 0.2rem;
     width: 100%;
+    bottom:0rem;
+    left:1rem; 
+}
+
+.footer_formularios_fijo{
+    color: whitesmoke;
+    font-size: 0.7rem;
+    font-weight: bold;
+    height: auto; 
+    margin: auto;
+    padding: 0.5rem;
+    padding-top: 0.2rem;
+    width: 100%;
+    bottom:0rem;
+    left:1rem; 
     position:fixed;
-    bottom:0.5rem;
-    left:1rem;
 }
 
 .footer_formularios span{
@@ -881,142 +894,137 @@ background: linear-gradient(90deg, rgba(241,236,241,1) 0%, rgba(245,242,245,1) 5
 
 /*********MEDIA QUERY - Mobile *******/
 @media screen and (min-width: 320px) and (max-width: 480px) {
-    .header_box{
-        width: 100%;
-        height: 100%;
-        flex-direction: column;
-        background: rgb(78,33,88);
-        background: linear-gradient(90deg, rgba(78,33,88,1) 0%, rgba(78,33,88,1) 50%, rgba(248,244,248,1) 100%);
-    }
-    body{
-        background: rgb(78,33,88);
-        background: linear-gradient(90deg, rgba(78,33,88,1) 0%, rgba(78,33,88,1) 50%, rgba(248,244,248,1) 100%);
-    }
-    .nav_menu ul{
-        margin-left: 0px;
-        height: 1.6rem;
-    }
-    .nav_menu ul li a{
-        height: 1.5rem;
-        font-size: 9px;
-        width: fit-content;
-        padding: 0.5rem;
-        margin: 0;
-    }
+.header_box{
+    width: 100%;
+    height: 100%;
+    flex-direction: column;
+    background: rgb(78,33,88);
+    background: linear-gradient(90deg, rgba(78,33,88,1) 0%, rgba(78,33,88,1) 16%, rgba(248,244,248,1) 100%);
 
-    .nav_menu ul li a:hover{
-        background: linear-gradient(90deg, rgba(78,33,88,1) 0%, rgba(134,54,129,1)  50%, rgba(78,33,88,1) 100%);
+}
 
-        height: 1.5rem;
-    } 
-    .nav_menu ul li{
-        margin-left: 0;
-        padding: 0;
-    }
-    .contain{
-        height: 80%;
-        width: 80%; 
-    } 
+.nav_menu ul{
+    margin-left: 0px;
+    height: 1.6rem;
+}
+.nav_menu ul li a{
+    height: 1.5rem;
+    font-size: 7px;
+    width: fit-content;
+    padding: 0.5rem;
+    margin: 0;
+}
+.nav_menu ul li a:hover{
+    background: linear-gradient(90deg, rgba(78,8,1) 0%, rgba(134,54,129,1)  99%, rgba33,88,1) 100%);
+    height: 1.5rem;
+} 
+.nav_menu ul li{
+    margin-left: 0;
+    padding: 0;
+}
+.contain{
+    height: 80%;
+    width: 80%; 
+} 
+*****CENTRAR EL CONTAIN*******/  
+.seccion.contain{
+    height: 250px;
+    width: 250px;
+    margin:0;
+    padding: 0;
+}  
+    /*Videos*/
+.seccion_videos{
+    width: 100%;
+    margin:0 auto;
+}
+.div_contain_form .div_principal{
+    color: black;
+    font-size: xx-small;
+}  
+.grilla_index {
+    display: flex;
+    flex-direction: column;
+    width: 80%;
+    padding-left: 10%;
+}
+.grilla_tintoreria {
+    display: flex;
+    flex-direction: column;
+    height: auto;
+}
+.card{
+    width: 100%;
+    height: auto;
+    padding-bottom: 0.2rem;
+}
+.seccion_categoria-b{
+    display: flex;
+    flex-direction: column;
+    width: 90%;
+    height: auto;
+    justify-content: center;
+    padding-left: 3rem;
+}
+.estilo-b .add-cart{
+    width: fit-content;
+    margin: 0;
+    font-size: small;
+}
+.seccion_categoria-c{
+    display: flex;
+    flex-direction: column;
+    width: 90%;
+    height: auto;
+    padding-left: 3rem;
+}
+.estilo-c .add-cart{
+    width: fit-content;
+    margin: 0;
+    margin-top: 1rem;
+    font-size: small;
+}
+.contacto{
+    padding: 0.1rem;
+}
+.img_mapa{
+    width: 15rem;
+    padding-top: 0;
+    padding-bottom: 0;
+}
+.btn_wp{
+        width: 8%;
+}
+.btn_ico{
+    width: 35%;
+    padding-left: 2rem;
+}
+.ico{
+    color:rgb(162, 159, 159);
+}
+.botones{
+    width: 100px;
+}  
+.boton-centrado{
+    padding-left: 1.3rem;
+}
+.footer_formularios .fijo{
+    font-size: 0.5rem;
 
-/********CENTRAR EL CONTAIN*******/  
-    .seccion.contain{
-        height: 250px;
-        width: 250px;
-        margin:0;
-        padding: 0;
-    }  
+}  
+h1{
+    font-size: 15px;
+}
+h5{
+    font-size: 10px;
+}
+.titulo_direccion{
+    position:fixed;
+    top:0rem;
+    left:10rem;
+}
+.contain_formulario{
+    margin-top: 0rem;
+}
 
-
-        /*Videos*/
-    .seccion_videos{
-        width: 100%;
-        margin:0 auto;
-    }
-
-    .div_contain_form .div_principal{
-        color: black;
-        font-size: xx-small;
-    }  
-
-    .grilla_index {
-        display: flex;
-        flex-direction: column;
-        width: 80%;
-        padding-left: 10%;
-    }
-
-    .grilla_tintoreria {
-        display: flex;
-        flex-direction: column;
-        height: auto;
-    }
-
-    .card{
-        width: 100%;
-        height: auto;
-        padding-bottom: 0.2rem;
-    }
-
-    .seccion_categoria-b{
-        display: flex;
-        flex-direction: column;
-        width: 90%;
-        height: auto;
-        justify-content: center;
-        padding-left: 3rem;
-    }
-
-    .estilo-b .add-cart{
-        width: fit-content;
-        margin: 0;
-        font-size: small;
-    }
-
-    .seccion_categoria-c{
-        display: flex;
-        flex-direction: column;
-        width: 90%;
-        height: auto;
-        padding-left: 3rem;
-    }
-    .estilo-c .add-cart{
-        width: fit-content;
-        margin: 0;
-        margin-top: 1rem;
-        font-size: small;
-    }
-    .contacto{
-        padding: 0.1rem;
-    }
-    .contain_formulario{
-        width: 85%;
-        height: auto;
-        margin-top: 0.2rem;
-        padding-left: 2rem;
-    }
-
-    .contain_formulario .contacto{
-        padding-top: 0.2rem;
-        padding-bottom: 0.2rem;
-    }
-
-    .img_mapa{
-        width: 15rem;
-        padding-top: 0;
-        padding-bottom: 0;
-    }
-
-    .btn_wp{
-            width: 8%;
-    }
-    .btn_ico{
-        width: 35%;
-        padding-left: 2rem;
-    }
-    .ico{
-        /* color: rgb(26, 58, 26); */
-        color:rgb(162, 159, 159);
-    }
-
-    
 }
