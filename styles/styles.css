@@ -13,10 +13,10 @@ body{
 
 .header_box{
     display: flex;
-    /* background: linear-gradient(90deg, rgba(78,33,88,1) 0%, rgba(78,33,88,1) 90%, rgb(99, 51, 96) 100%); */
     min-height: auto; 
     width: 100%;
-    height: 67px;
+    /* height: 67px; */
+    /* height: 50px; */
     position: sticky;   /*Header Fijo */
     top:0;               /*Header Fijo*/
     z-index: 1;         /*Header Fijo tienen que estar las 3*/
@@ -29,10 +29,10 @@ body{
 }
 
 .img_mapa{
-    width: 100%;
+    width: 90%;
     height: auto;
-    width: fit-content;
     margin: 0;
+    padding: 0.5rem 0 ;
 }
 
 .imagen_de_fondo{
@@ -137,7 +137,8 @@ legend{
 }
 
 .contain_formulario{
-    background-color:  #e2e0e5ea;
+    background: rgb(241,236,241);
+    background: linear-gradient(90deg, rgba(241,236,241,1) 0%, rgba(245,242,245,1) 50%, rgba(25,24,25,1) 100%);
     border-radius: 2rem;
     color: #5b1257;
     width: 21rem;
@@ -161,12 +162,15 @@ textarea{
 }
 /**/
 /*Menues usados para todas las paginas*/
+.nav_menu{
+    height: 60px;
+}
 
 .nav_menu ul{
     display: flex;
     background-color: transparent;
-    margin-top: 0.5rem; /*para despegarlo del header_box*/
-    margin-left: 0.5rem;
+    margin-top: 0; /*para despegarlo del header_box*/
+    margin-left: 0;
 }
 
 .nav_menu ul li{
@@ -176,14 +180,14 @@ textarea{
 
 .nav_menu ul li a{
     width: 100%;
-    height: 98%;
+    height: 90%;
     font-family: 'Roboto', sans-serif;
     display: flex;
     align-items: center;
-    padding: 14px;
+    padding: 12px;
     color: white;
     text-decoration: none;
-    font-size: 14px;
+    font-size: 12px;
     margin-left: 0.3rem;
     margin-right: 1rem;
     transition: all 1ms ease;
@@ -193,7 +197,7 @@ textarea{
 }
 
 .nav_menu ul li a:hover{
-    height: 98%;
+    height: 90%;
     transform: scale(1.1);
     background: rgb(78,33,88);
     background: linear-gradient(90deg, rgba(78,33,88,1) 0%, rgba(134,54,129,1) 50%, rgba(78,33,88,1) 100%);
@@ -204,10 +208,12 @@ textarea{
 .menu_item a{
     color: white;
     text-decoration: none;
+    height: 90%;
 }
 
 .item_elegido a{
     color: white;
+    height: 90%;
     transform: scale(1.1);
     background: linear-gradient(90deg, rgba(78,33,88,1) 0%, rgba(134,54,129,1) 50%, rgba(78,33,88,1) 100%);
     text-decoration: none;
@@ -409,7 +415,8 @@ textarea{
     grid-template-rows: 1fr;
     grid-template-areas: 
         "ropa   olor    eco";
-    text-align: center center;
+    justify-content: space-around;
+
 }
 .ico{
     border: 0.1px solid transparent;
